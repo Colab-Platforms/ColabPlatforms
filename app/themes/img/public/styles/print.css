@@ -1,0 +1,154 @@
+@charset "UTF-8";
+/* Color styles */
+:root {
+  --color-neon-pitch-green: rgba(85, 244, 142, 1);
+  --color-legacy-blue: rgba(8, 74, 255, 1);
+  --color-expert-purple: rgba(198, 66, 245, 1);
+  --color-passionate-red: rgba(255, 20, 90, 1);
+  --color-united-gold: rgba(255, 211, 0, 1);
+  --color-dynamic-blue: rgba(22, 222, 229, 1);
+  --color-heri-blue-10: rgba(230, 237, 255, 1);
+  --color-heri-blue-20: rgba(206, 219, 255, 1);
+  --color-heri-blue-30: rgba(181, 201, 255, 1);
+  --color-heri-blue-40: rgba(156, 183, 255, 1);
+  --color-heri-blue-50: rgba(131, 164, 255, 1);
+  --color-heri-blue-60: rgba(107, 146, 255, 1);
+  --color-heri-blue-70: rgba(82, 128, 255, 1);
+  --color-heri-blue-80: rgba(57, 110, 255, 1);
+  --color-heri-blue-90: rgba(33, 92, 255, 1);
+  --color-purple-10: rgba(249, 236, 254, 1);
+  --color-purple-20: rgba(244, 217, 253, 1);
+  --color-purple-30: rgba(238, 198, 252, 1);
+  --color-purple-40: rgba(232, 179, 251, 1);
+  --color-purple-50: rgba(227, 160, 250, 1);
+  --color-purple-60: rgba(221, 142, 249, 1);
+  --color-purple-70: rgba(215, 123, 248, 1);
+  --color-purple-80: rgba(209, 104, 247, 1);
+  --color-purple-90: rgba(204, 85, 246, 1);
+  --color-red-20: rgba(255, 208, 222, 1);
+  --color-red-30: rgba(255, 184, 205, 1);
+  --color-red-40: rgba(255, 161, 189, 1);
+  --color-red-50: rgba(255, 137, 172, 1);
+  --color-red-60: rgba(255, 114, 156, 1);
+  --color-red-70: rgba(255, 91, 139, 1);
+  --color-red-80: rgba(255, 67, 123, 1);
+  --color-red-90: rgba(255, 44, 107, 1);
+  --color-united-gold-10: rgba(255, 251, 229, 1);
+  --color-united-gold-20: rgba(255, 246, 204, 1);
+  --color-united-gold-30: rgba(255, 242, 178, 1);
+  --color-united-gold-40: rgba(255, 237, 153, 1);
+  --color-united-gold-50: rgba(255, 233, 128, 1);
+  --color-united-gold-60: rgba(255, 229, 102, 1);
+  --color-united-gold-70: rgba(255, 224, 77, 1);
+  --color-united-gold-80: rgba(255, 220, 51, 1);
+  --color-united-gold-90: rgba(255, 215, 26, 1);
+  --color-neon-pitch-green-10: rgba(238, 254, 244, 1);
+  --color-neon-pitch-green-20: rgba(221, 253, 232, 1);
+  --color-neon-pitch-green-30: rgba(204, 252, 221, 1);
+  --color-neon-pitch-green-40: rgba(187, 251, 210, 1);
+  --color-neon-pitch-green-50: rgba(170, 249, 199, 1);
+  --color-neon-pitch-green-60: rgba(153, 248, 187, 1);
+  --color-neon-pitch-green-70: rgba(136, 247, 176, 1);
+  --color-neon-pitch-green-80: rgba(119, 246, 165, 1);
+  --color-neon-pitch-green-90: rgba(102, 245, 153, 1);
+  --color-dynamic-blue-10: rgba(232, 254, 255, 1);
+  --color-dynamic-blue-20: rgba(209, 253, 255, 1);
+  --color-dynamic-blue-30: rgba(186, 253, 255, 1);
+  --color-dynamic-blue-40: rgba(163, 252, 255, 1);
+  --color-dynamic-blue-50: rgba(140, 251, 255, 1);
+  --color-dynamic-blue-60: rgba(117, 250, 255, 1);
+  --color-dynamic-blue-70: rgba(94, 249, 255, 1);
+  --color-dynamic-blue-80: rgba(71, 249, 255, 1);
+  --color-dynamic-blue-90: rgba(48, 248, 255, 1);
+  --color-grey-10: rgba(204, 204, 204, 1);
+  --color-grey-20: rgba(153, 153, 153, 1);
+  --color-grey-30: rgba(56, 56, 56, 1);
+  /* Text-size styles
+  /* base size: desktop-para-16--regular (16px) */
+  --desktop-h1: 6.25rem;
+  --desktop-h2: 3.38rem;
+  --desktop-h3: 2.62rem;
+  --desktop-h4: 2.25rem;
+  --desktop-h5: 1.5rem;
+  --desktop-h6: 1.875rem;
+  --mobile-h1: 2.88rem;
+  --mobile-h2: 2.38rem;
+  --mobile-h3: 1.88rem;
+  --mobile-h4: 1.5rem;
+  --mobile-h5: 1.25rem;
+  --mobile-h6: 1rem;
+  --desktop-mega: 8.12rem;
+  --desktop-approach-special: 1.88rem;
+  --desktop-para-48: 3rem;
+  --desktop-para-36: 2.25rem;
+  --desktop-para-24: 1.5rem;
+  --desktop-para-20: 1.25rem;
+  --desktop-para-18: 1.12rem;
+  --desktop-para-16: 1rem;
+  --desktop-kicker--large: 1.5rem;
+  --desktop-kicker--medium: 1.25rem;
+  --desktop-kicker--small: 1.12rem;
+  --desktop-category--title: 0.94rem;
+  --desktop-date--title: 0.81rem;
+  --desktop-accordion: 1rem;
+  --desktop-quote: 2.25rem;
+  --desktop-stat: 5rem;
+  --mobile-mega: 3.1rem;
+  --mobile-approach-special: 1.25rem;
+  --mobile-para-32: 2rem;
+  --mobile-para-24: 1.5rem;
+  --mobile-para-20--regular: 1.25rem;
+  --mobile-para-20--semibold: 1.25rem;
+  --mobile-para-18--regular: 1.12rem;
+  --mobile-para-18--semibold: 1.12rem;
+  --mobile-para-16--regular: 1rem;
+  --mobile-para-16--semibold: 1rem;
+  --mobile-para-14--regular: 0.88rem;
+  --mobile-para-14--semibold: 0.88rem;
+  --mobile-kicker--large: 1.12rem;
+  --mobile-kicker--medium: 1rem;
+  --mobile-kicker--small: 0.88rem;
+  --mobile-category--title: 0.88rem;
+  --mobile-date--title: 0.75rem;
+  --mobile-stat: 4.38rem;
+  --mobile-quote: 1.5rem;
+  /* Fonts */
+  --font-primary: "ProximaNova", sans-serif;
+  --font-secondary: "ApproachMono", sans-serif;
+  --font-size-base: 1.125rem;
+  --line-height-base: 1.75rem;
+  --mobile-font-size-base: 1rem;
+  --mobile-line-height-base: 1.625rem;
+  /* Header */
+  --header-height-sm: 55px;
+  --header-height: 86px;
+  --header-bg-color: var(--bs-black);
+  --logo-height: 50px;
+  --logo-height-sm: 30px;
+  --height-small: 35px;
+  --color-header-border: rgba(204, 204, 204, 0.4);
+  /* Bootstrap */
+  --bs-dropdown-box-shadow: none;
+  --bs-nav-link-font-weight: 700;
+  --bs-modal-color: #000;
+  --bs-popover-header-color: #000;
+}
+
+* {
+  -webkit-print-color-adjust: exact !important; /* Chrome, Safari 6 – 15.3, Edge */
+  print-color-adjust: exact !important; /* Firefox 97+, Safari 15.4+ */
+}
+
+.no-print,
+.pagination,
+.hero--simple,
+.cookie-message,
+.pagination__container {
+  display: none !important;
+}
+
+.admin-bar .fixed-top {
+  top: 0;
+}
+
+/*# sourceMappingURL=print.css.map*/
