@@ -16631,7 +16631,7 @@ form .form-dropdown[aria-expanded=true],
   .service-links__image img {
     max-height: -moz-fit-content;
     max-height: fit-content;
-    max-width: 100%;
+    
   }
 }
 .service-links__links {
