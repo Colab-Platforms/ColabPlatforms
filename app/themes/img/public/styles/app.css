@@ -12568,7 +12568,7 @@ h6,
 }
 @media (min-width: 768px) {
   .mega-font .line {
-    height: 130px;
+    height: auto;
   }
 }
 
