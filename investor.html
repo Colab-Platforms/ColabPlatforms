@@ -13,161 +13,82 @@
         }
        
 
-       
-
-       
-
-        .accordion-item {
-           border-bottom:1px solid black;
-            transition: background-color 0.3s ease;
-        }
-
-        .accordion-item:hover {
-            background-color:black;
-        }
-
-        .accordion-header {
-            padding: 18px 20px;
-            background-color:black;
-            color: white;
-            cursor: pointer;
-            font-size: 18px;
-            font-weight: 600;
-            text-align: left;
-            border: none;
-            width: 100%;
-            transition: background-color 0.3s ease;
-        }
-
-        .accordion-header:hover {
-            background-color:rgb(34, 32, 32);
-        }
-
-        .accordion-body {
-            padding: 15px;
-            display: none;
-            background-color:white !important;
-            border-top: 1px solid #ddd;
-            font-size: 16px;
-            border: none !important;
-        }
-
-        .accordion-body.active {
-            display: block;
-            animation: slideDown 0.5s ease-out;
-        }
-
-        @keyframes slideDown {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .accordion-link {
-            display: block;
-            color: #007bff;
-            text-decoration: none;
-            margin-top: 8px;
-            transition: color 0.3s ease;
-        }
-
-        .accordion-link:hover {
-            color: #0056b3;
-            text-decoration: underline;
-        }
-        @media (min-width: 768px) {
-            #board-and-committee-details-tab{
-    width: 100%;
-    display: grid;
-    justify-items: center;
-}
-table{
-    width: 55%;
-  
-}
-    .accordion-body a {
-        font-size: 1.5rem;
-     
-        padding: 10px !important ;
-        letter-spacing: -0.03rem;
+        h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #333;
     }
-    .accordionn {
-            border-radius: 8px;
-            overflow: hidden;
-            min-width: 1000px;
-        }
-}
-thead, tbody, tfoot, tr, td, th {
-    border-color: inherit;
-    border-style: solid;
-    border-width: 1px !important;
-    padding: 7px;
-}
-        /* Responsive Design */
-        @media (max-width: 768px) {
-             /* Accordion Styles */
-             #board-and-committee-details-tab{
-    width: 100%;
-    display: grid;
+
+    select {
+      max-width: 300px;
+      padding: 10px 12px;
+      font-size: 1rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      margin-bottom: 30px;
+      background-color: white;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    #reportContent {
+      width: 100%;
+      max-width: 600px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .report-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 20px;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .report-item:hover {
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    .report-item a {
+      text-decoration: none;
+      color: #007bff;
+      font-weight: 500;
+      font-size: 16px;
+      word-break: break-word;
+    }
+
+    .download-icon {
+      width: 22px;
+      height: 22px;
+      fill: #555;
+      transition: fill 0.3s ease;
+    }
+
+    .report-item:hover .download-icon {
+      fill: #007bff;
+    }
+    @media screen and (min-width: 600px) {
+      .reports{
+      display: grid;
     justify-items: center;
-}
-table{
-    width: 95%;
-  
-}
-        .accordionn {
-            border-radius: 8px;
-            overflow: hidden;
-           width: 100%;
-        }
-            .container {
-                width: 95%;
-               
-            }
-
-            h2 {
-                font-size: 1.6rem;
-            }
-
-            .accordion-header {
-                font-size: 16px;
-            }
-        }
-        .accordion-item {
-    border: 0.5px solid black !important;
-}
-.con{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-top: 20px;
-    
-}
-.accordion-body a {
-    color: var(--bs-black);
-    font-family: var(--font-secondary);
-    font-size: 1rem;
-    line-height: 1.625rem;
-    font-weight: 600;
-    word-break: break-word;
-    width: 90%;
-    display: block;
-    position: relative;
-    padding: 1rem 1.5rem;
-}
-  
-  
-
-
-
-
+    gap: 10px;
+    align-content: center;
+    margin: 14px 0px;
+    }
+    }
+    @media screen and (max-width: 600px) {
+     .reports{
+      padding: 0px 10px;
+      gap: 10px;
+        display: grid;
+        margin: 14px 0px;
+     }
+    }
+   
     </style>
 	
 	<!-- This site is optimized with the Yoast SEO plugin v24.6 - https://yoast.com/wordpress/plugins/seo/ -->
@@ -383,69 +304,62 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
   </div> -->
                
-               
-     <div class="con">   
-  <div id="accordion" class="accordionn">
-    <!-- Report sections will be dynamically inserted here -->
-   
-</div>
-</div> 
-<div id="board-and-committee-details-tab" class="accordion" data-title-link="board-and-committee-details-tab">
-<h5 style="text-align: center;padding-top: 23px;">Composition of Board and KMPs:</h5><table><tbody><tr><td width="255"><p><strong>Name </strong></p></td><td width="337"><p><strong>Designation</strong></p></td></tr><tr><td width="255"><p>Mukesh Jadhav</p></td><td width="337"><p>Chairman &amp; Non-executive Director</p></td></tr><tr><td width="255"><p>Puneet Singh Chadhok</p></td><td width="337"><p>Managing Director</p></td></tr><tr><td width="255"><p>Latesh Poojary</p></td><td width="337"><p>Non-executive Director</p></td></tr><tr><td width="255"><p>Amardeep Singh</p></td><td width="337"><p>Executive Director</p></td></tr><tr><td width="255"><p>Rohit Singh</p></td><td width="337"><p>Independent Director</p></td></tr><tr><td width="255"><p>Anupriya Sharma</p></td><td width="337"><p>Independent Director</p></td></tr><tr><td width="255"><p>Chetan Shah</p></td><td width="337"><p>Chief Financial Officer</p></td></tr></tbody></table><p>&nbsp;</p><p>Composition of Audit Committee:</p><p>&nbsp;</p><table width="595"><tbody><tr><td width="255"><p><strong>Name of Director</strong></p></td><td width="340"><p><strong>Designation</strong></p></td></tr><tr><td width="255"><p>Rohit Singh</p></td><td width="340"><p>Chairman</p></td></tr><tr><td width="255"><p>Anupriya Sharma</p></td><td width="340"><p>Member</p></td></tr><tr><td width="255"><p>Mukesh Jadhav</p></td><td width="340"><p>Member</p></td></tr></tbody></table><p>&nbsp;</p><p>Composition of Nomination and Remuneration Committee:</p><p>&nbsp;</p><table width="595"><tbody><tr><td width="255"><p><strong>Name of Director</strong></p></td><td width="340"><p><strong>Designation</strong></p></td></tr><tr><td width="255"><p>Rohit Singh</p></td><td width="340"><p>Chairman</p></td></tr><tr><td width="255"><p>Anupriya Sharma</p></td><td width="340"><p>Member</p></td></tr><tr><td width="255"><p>Mukesh Jadhav</p></td><td width="340"><p>Member</p></td></tr></tbody></table><p>&nbsp;</p><p>Composition of Stakeholders Relationship Committee:</p><p>&nbsp;</p><table width="595"><tbody><tr><td width="255"><p><strong>Name of Director</strong></p></td><td width="340"><p><strong>Designation</strong></p></td></tr><tr><td width="255"><p>Mukesh Jadhav</p></td><td width="340"><p>Chairman</p></td></tr><tr><td width="255"><p>Rohit Singh</p></td><td width="340"><p>Member</p></td></tr><tr><td width="255"><p>Anupriya Sharma</p></td><td width="340"><p>Member</p></td></tr></tbody></table><p>&nbsp;</p><p>Presiding officer for determining materiality of an event or information:</p><p>&nbsp;</p><table><tbody><tr><td width="134"><p><strong>Name </strong></p></td><td width="178"><p><strong>Designation</strong></p></td><td width="99"><p><strong>Contact No</strong></p></td><td width="190"><p><strong>Email id</strong></p></td></tr><tr><td width="134"><p>Mukesh Jadhav</p></td><td width="178"><p>Director</p></td><td width="99"><p>8828865429</p></td><td width="190"><p>cs@colabcloud.in</p><p>&nbsp;</p></td></tr></tbody></table><p><br>   </p>				                            </div>
-</div>
- 
+ <div class="reports">            
+  <h2>Select Report Type</h2>
+
+  <select id="reportSelect">
+    
+  </select>
+
+  <div id="reportContent"></div>
+</div>  
 <script>
-// Fetch the data from the faqs.json file
-fetch('faqs.json')
-    .then(response => response.json())
+  const select = document.getElementById('reportSelect');
+  const reportContent = document.getElementById('reportContent');
+
+  fetch('/faqs.json')
+    .then(res => res.json())
     .then(data => {
-        displayReports(data); // Call function to display reports
+      data.forEach((item, index) => {
+        const option = document.createElement('option');
+        option.value = index;
+        option.textContent = item.header;
+        if (index === 0) option.selected = true;
+        select.appendChild(option);
+      });
+
+      // Add the change event listener
+      select.addEventListener('change', function () {
+        const selectedIndex = this.value;
+        reportContent.innerHTML = '';
+
+        if (selectedIndex === '') return;
+
+        const selectedData = data[selectedIndex].text;
+
+        selectedData.forEach(report => {
+          const div = document.createElement('div');
+          div.classList.add('report-item');
+          div.innerHTML = `
+            <a href="${report.link}" target="_blank">${report.head}</a>
+            <a href="${report.link}" download title="Download">
+              <svg class="download-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M5 20h14v-2H5v2zm7-18v10l5-5 1.41 1.41L12 17 6.59 11.41 8 10l5 5V2z"/>
+              </svg>
+            </a>`;
+          reportContent.appendChild(div);
+        });
+      });
+
+      // ✅ Now trigger the change after listener is set
+      select.dispatchEvent(new Event('change'));
     })
     .catch(error => {
-        console.error('Error fetching the data:', error);
+      console.error('Error loading JSON:', error);
+      reportContent.innerHTML = '<p style="color:red;">Failed to load data.</p>';
     });
-
-// Function to display the reports
-function displayReports(reports) {
-    const accordionContainer = document.getElementById('accordion');
-
-    reports.forEach(report => {
-        const reportItem = document.createElement('div');
-        reportItem.classList.add('accordion-item');
-
-        // Create the report header
-        const header = document.createElement('div');
-        header.classList.add('accordion-header');
-        header.innerHTML = report.header;
-
-        // Create the report body
-        const body = document.createElement('div');
-        body.classList.add('accordion-body');
-
-        // Loop through the text array and add each report detail
-        report.text.forEach(detail => {
-            const link = document.createElement('a');
-            link.classList.add('accordion-link');
-            link.href = detail.link;
-            link.target = '_blank';
-            link.innerHTML = ` ${detail.head}`;
-            body.appendChild(link);
-        });
-
-        // Append header and body to the report item
-        reportItem.appendChild(header);
-        reportItem.appendChild(body);
-
-        // Add event listener to toggle the accordion
-        header.addEventListener('click', () => {
-            body.classList.toggle('active');
-        });
-
-        // Append the report item to the container
-        accordionContainer.appendChild(reportItem);
-    });
-}
 </script>
+
              
            
 
