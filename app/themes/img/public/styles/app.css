@@ -4,11 +4,11 @@
  */
 /* Color styles */
 :root {
-  --color-neon-pitch-green: rgba(85, 244, 142, 1);
-  --color-legacy-blue: rgba(8, 74, 255, 1);
+  --color-neon-pitch-green: #fdd301;
+  --color-legacy-blue: black;
   --color-expert-purple: rgba(198, 66, 245, 1);
   --color-passionate-red: rgba(255, 20, 90, 1);
-  --color-united-gold: rgba(255, 211, 0, 1);
+  --color-united-gold: #fdd301;
   --color-dynamic-blue: rgba(22, 222, 229, 1);
   --color-heri-blue-10: rgba(230, 237, 255, 1);
   --color-heri-blue-20: rgba(206, 219, 255, 1);
@@ -169,7 +169,7 @@
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
   --bs-primary: rgb(255, 211, 0);
-  --bs-secondary: rgb(85, 244, 142);
+  --bs-secondary:#fdd301;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
@@ -210,7 +210,7 @@
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
   --bs-link-color: rgb(8, 74, 255);
-  --bs-link-hover-color: #063bcc;
+  
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
 }
@@ -384,14 +384,8 @@ a {
   color: var(--bs-link-color);
   text-decoration: underline;
 }
-a:hover {
-  color: var(--bs-link-hover-color);
-}
 
-a:not([href]):not([class]), a:not([href]):not([class]):hover {
-  color: inherit;
-  text-decoration: none;
-}
+
 
 pre,
 code,
@@ -2194,10 +2188,7 @@ progress {
   color: var(--bs-table-active-color);
 }
 
-.table-hover > tbody > tr:hover > * {
-  --bs-table-accent-bg: var(--bs-table-hover-bg);
-  color: var(--bs-table-hover-color);
-}
+
 
 .table-primary {
   --bs-table-color: #000;
@@ -2440,9 +2431,6 @@ progress {
   .form-control::file-selector-button, .search-form .search-field::file-selector-button {
     transition: none;
   }
-}
-.form-control:hover:not(:disabled):not([readonly])::file-selector-button, .search-form .search-field:hover:not(:disabled):not([readonly])::file-selector-button {
-  background-color: #dde0e3;
 }
 
 .form-control-plaintext {
@@ -3198,16 +3186,8 @@ textarea.form-control-lg {
     transition: none;
   }
 }
-.btn:hover, .hs-form .hs-button:hover, .search-form .search-submit:hover {
-  color: var(--bs-btn-hover-color);
-  background-color: var(--bs-btn-hover-bg);
-  border-color: var(--bs-btn-hover-border-color);
-}
-.btn-check + .btn:hover, .hs-form .btn-check + .hs-button:hover, .search-form .btn-check + .search-submit:hover {
-  color: var(--bs-btn-color);
-  background-color: var(--bs-btn-bg);
-  border-color: var(--bs-btn-border-color);
-}
+
+
 .btn:focus-visible, .hs-form .hs-button:focus-visible, .search-form .search-submit:focus-visible {
   color: var(--bs-btn-hover-color);
   background-color: var(--bs-btn-hover-bg);
@@ -3560,9 +3540,7 @@ textarea.form-control-lg {
 .btn-link:focus-visible {
   color: var(--bs-btn-color);
 }
-.btn-link:hover {
-  color: var(--bs-btn-hover-color);
-}
+
 
 .btn-lg {
   --bs-btn-padding-y: 0.5rem;
@@ -3882,10 +3860,7 @@ textarea.form-control-lg {
   background-color: transparent;
   border: 0;
 }
-.dropdown-item:hover, .dropdown-item:focus {
-  color: var(--bs-dropdown-link-hover-color);
-  background-color: var(--bs-dropdown-link-hover-bg);
-}
+
 .dropdown-item.active, .dropdown-item:active {
   color: var(--bs-dropdown-link-active-color);
   text-decoration: none;
@@ -3959,9 +3934,7 @@ textarea.form-control-lg {
     transition: none;
   }
 }
-.nav-link:hover, .nav-link:focus {
-  color: var(--bs-nav-link-hover-color);
-}
+
 .nav-link.disabled {
   color: var(--bs-nav-link-disabled-color);
   pointer-events: none;
@@ -3985,10 +3958,7 @@ textarea.form-control-lg {
   border-top-left-radius: var(--bs-nav-tabs-border-radius);
   border-top-right-radius: var(--bs-nav-tabs-border-radius);
 }
-.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
-  isolation: isolate;
-  border-color: var(--bs-nav-tabs-link-hover-border-color);
-}
+
 .nav-tabs .nav-link.disabled, .nav-tabs .nav-link:disabled {
   color: var(--bs-nav-link-disabled-color);
   background-color: transparent;
@@ -4101,9 +4071,6 @@ textarea.form-control-lg {
   text-decoration: none;
   white-space: nowrap;
 }
-.navbar-brand:hover, .navbar-brand:focus {
-  color: var(--bs-navbar-brand-hover-color);
-}
 
 .navbar-nav {
   --bs-nav-link-padding-x: 0;
@@ -4131,11 +4098,6 @@ textarea.form-control-lg {
   padding-bottom: 0.5rem;
   color: var(--bs-navbar-color);
 }
-.navbar-text a,
-.navbar-text a:hover,
-.navbar-text a:focus {
-  color: var(--bs-navbar-active-color);
-}
 
 .navbar-collapse {
   flex-basis: 100%;
@@ -4158,9 +4120,7 @@ textarea.form-control-lg {
     transition: none;
   }
 }
-.navbar-toggler:hover {
-  text-decoration: none;
-}
+
 .navbar-toggler:focus {
   text-decoration: none;
   outline: 0;
@@ -4545,9 +4505,7 @@ textarea.form-control-lg {
     transition: none;
   }
 }
-.accordion-button:hover {
-  z-index: 2;
-}
+
 .accordion-button:focus {
   z-index: 3;
   border-color: var(--bs-accordion-btn-focus-border-color);
@@ -4652,12 +4610,7 @@ textarea.form-control-lg {
     transition: none;
   }
 }
-.page-link:hover {
-  z-index: 2;
-  color: var(--bs-pagination-hover-color);
-  background-color: var(--bs-pagination-hover-bg);
-  border-color: var(--bs-pagination-hover-border-color);
-}
+
 .page-link:focus {
   z-index: 3;
   color: var(--bs-pagination-focus-color);
@@ -4715,11 +4668,7 @@ textarea.form-control-lg {
   border-radius: 0.375rem;
   opacity: 0.5;
 }
-.btn-close:hover {
-  color: #000;
-  text-decoration: none;
-  opacity: 0.75;
-}
+
 .btn-close:focus {
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(255, 211, 0, 0.25);
@@ -5238,36 +5187,22 @@ textarea.form-control-lg {
 .link-primary {
   color: rgb(255, 211, 0) !important;
 }
-.link-primary:hover, .link-primary:focus {
-  color: #ffdc33 !important;
-}
 
 .link-secondary {
   color: rgb(85, 244, 142) !important;
 }
-.link-secondary:hover, .link-secondary:focus {
-  color: #77f6a5 !important;
-}
+
 
 .link-success {
   color: #198754 !important;
-}
-.link-success:hover, .link-success:focus {
-  color: #146c43 !important;
 }
 
 .link-info {
   color: #0dcaf0 !important;
 }
-.link-info:hover, .link-info:focus {
-  color: #3dd5f3 !important;
-}
 
 .link-warning {
   color: #ffc107 !important;
-}
-.link-warning:hover, .link-warning:focus {
-  color: #ffcd39 !important;
 }
 
 .link-danger {
@@ -13323,7 +13258,7 @@ div > p + .buttons {
 }
 
 .btn-blue::before {
-  background-color: var(--color-legacy-blue);
+  background-color: #fdd301;
 }
 
 .btn-purple::before {
@@ -13354,9 +13289,7 @@ div > p + .buttons {
   .btn-green:hover::after {
     background-color: var(--color-neon-pitch-green-70);
   }
-  .btn-blue:hover::after {
-    background-color: var(--color-heri-blue-70);
-  }
+  
   .btn-purple:hover::after {
     background-color: var(--color-purple-80);
   }
@@ -13662,14 +13595,14 @@ div > p + .buttons {
 .btn-purple,
 .btn-red,
 .btn-black {
-  color: var(--bs-white);
-  background-image: url("data:image/svg+xml,%3csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M2 9.96596L16 9.96596' stroke='white' stroke-width='2' stroke-linecap='square' stroke-linejoin='round'/%3e%3cpath d='M12 4.96596L17 9.96596L12 14.966' stroke='white' stroke-width='2' stroke-linecap='square'/%3e%3c/svg%3e");
+  color: black;
+  background-image: url("data:image/svg+xml,%3csvg width='20' height='20' viewBox='0 0 20 20' fill='black' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M2 9.96596L16 9.96596' stroke='black' stroke-width='2' stroke-linecap='square' stroke-linejoin='round'/%3e%3cpath d='M12 4.96596L17 9.96596L12 14.966' stroke='black' stroke-width='2' stroke-linecap='square'/%3e%3c/svg%3e");
 }
 .btn-blue:hover,
 .btn-purple:hover,
 .btn-red:hover,
 .btn-black:hover {
-  color: var(--bs-white);
+  color: black;
 }
 
 .btn-download {
@@ -13726,7 +13659,7 @@ div > p + .buttons {
 }
 
 .btn-hover-blue:hover {
-  background-color: var(--color-legacy-blue) !important;
+  background-color: black !important;
   color: #000 !important;
 }
 
@@ -15613,8 +15546,10 @@ form .form-dropdown[aria-expanded=true],
   position: absolute;
   top: 0;
   left: 0;
-  height: 112%;
+  height: 100%;
   width: 100%;
+  object-fit: cover;
+ 
 }
 .hero__bg {
   background-blend-mode: multiply;
