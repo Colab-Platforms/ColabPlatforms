@@ -19,3 +19,4 @@ const parallaxItems = document.querySelectorAll('[data-speed]');
       item.style.transform = `translateY(${translateY}px)`;
     });
   });
+

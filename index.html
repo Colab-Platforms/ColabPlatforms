@@ -211,7 +211,7 @@ body{
 
 <main id="main" class="site-main" >
               
-                  <section class="hero -main  " >
+                  <!-- <section class="hero -main  " >
       <div class="hero__video" data-parallax="top" data-parallax-amount="0.1">
               <iframe src="https://player.vimeo.com/video/1071290836?dnt=1&background=1&controls=0&loop=1"
           frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
@@ -237,10 +237,111 @@ body{
       
           </div>
   </div>
+</section> -->
+
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
+
+<section class="hero -main swiper">
+  <div class="swiper-wrapper">
+    
+    <!-- Slide 1: Video -->
+    <div class="swiper-slide">
+      <div class="hero__video" data-parallax="top" data-parallax-amount="0.1">
+        <iframe
+          src="https://player.vimeo.com/video/1071290836?dnt=1&background=1&controls=0&loop=1&autoplay=1&muted=1"
+          frameborder="0" allow="autoplay; fullscreen" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="container wrap">
+        <div class="row">
+          <div class="col-12 col-md-9 col-lg-10 align-self-end">
+            <div class="hero__content" data-parallax="top" data-parallax-amount="0.25">
+              <span class="kicker-green small">The future of sports starts here</span>
+              <h1 class="page-title">
+                <span class="line"><span class="line-inner" data-aos="fade-up" data-aos-delay="600">Welcome</span></span>
+                <span class="line"><span class="line-inner" data-aos="fade-up" data-aos-delay="700">to</span></span>
+                <span class="line"><span class="line-inner" data-aos="fade-up" data-aos-delay="800">Colab Platforms</span></span>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 2: Image -->
+    <div class="swiper-slide">
+      <div class="hero__video" data-parallax="top">
+        <img style="height: 100vh;" class="mob"
+          src="https://cdn.shopify.com/s/files/1/0653/9830/9053/files/hero_bannner_mobile.jpg?v=1744461813"
+          frameborder="0" allow="autoplay; fullscreen" allowfullscreen loading="lazy">
+          <img  class="desk"
+          src="https://cdn.shopify.com/s/files/1/0653/9830/9053/files/hero_bannner_size.jpg?v=1744461812"
+          frameborder="0" allow="autoplay; fullscreen" allowfullscreen loading="lazy">
+      </div>
+      <div class="container wrap">
+        <div class="row">
+          <div class="col-12 col-md-9 col-lg-10 align-self-end">
+            <div class="hero__content" data-parallax="top" data-parallax-amount="0.25">
+              <span class="kicker-green small">The future of sports starts here</span>
+              <h1 class="page-title">
+                <span class="line"><span class="line-inner" data-aos="fade-up" data-aos-delay="600">Welcome</span></span>
+                <span class="line"><span class="line-inner" data-aos="fade-up" data-aos-delay="700">to</span></span>
+                <span class="line"><span class="line-inner" data-aos="fade-up" data-aos-delay="800">Colab Platforms</span></span>
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Controls -->
+  <div class="swiper-pagination"></div>
+  <div class="swiper-button-prev swiper-nav desktop-only"></div>
+  <div class="swiper-button-next swiper-nav desktop-only"></div>
 </section>
 
-        
-                  <div  class="background-color mega-block   br-0 pt-5 pt-lg-10" >
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper(".swiper", {
+    loop: true,
+    autoplay: {
+      delay: 7000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      0: {
+        navigation: false, // hide arrows
+      },
+      768: {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      },
+    },
+  });
+
+</script>
+
+
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+                  
+<div  class="background-color mega-block   br-0 pt-5 pt-lg-10" >
     <div class="container wrap" data-scroll-speed="1">
     
           <div class="row ">
@@ -1551,6 +1652,8 @@ latest news</span>
 <script type="text/javascript" src="https://www.img.com/app/themes/img/public/scripts/vendor.js?id=d28473c2c626949c4fa40dc1109edcbe" id="vendor.js-js"></script>
 <script type="text/javascript" src="https://www.img.com/app/themes/img/public/scripts/app.js?id=2dd575cf3749b885775e3ba432c00594" id="app.js-js"></script>
 <script type="text/javascript" src="https://www.img.com/app/themes/img/public/scripts/acf-map.js?id=79b41f2a7580cb10b3230c687225b334" id="contact-map.js-js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
 <script src="https://unpkg.com/lenis@1.2.3/dist/lenis.min.js"></script> 
 <script src="script.js"></script>
 

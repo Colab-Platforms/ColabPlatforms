@@ -17930,6 +17930,87 @@ body{
 .line-inner{
   font-family: 'hkgbold', sans-serif !important;
 }
+.hero.-main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero__video iframe,
+.hero__video img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-slide {
+  position: relative;
+  height: 100vh;
+}
+
+.hero__content {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  z-index: 10;
+  color: white;
+}
+.hero.-main .swiper-wrapper {
+  touch-action: pan-y;
+}
+
+.swiper-slide {
+  -webkit-overflow-scrolling: touch;
+}
+/* Hide arrows on mobile */
+.desktop-only {
+  display: none !important;
+}
+
+/* Show arrows only on screens wider than 768px */
+@media (min-width: 768px) {
+  .desktop-only {
+    display: block;
+  }
+}
+
+element.style {
+}
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 4px);
+}
+.swiper-pagination-clickable .swiper-pagination-bullet {
+    cursor: pointer;
+}
+.swiper-pagination-bullet {
+  background-color: #FFD700 !important; /* Yellow */
+  opacity: 0.5;
+}
+
+/* Active dot */
+.swiper-pagination-bullet-active {
+  background-color: #FFD700 !important; /* Bright Yellow */
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .mob{
+    display: block;
+  }
+  .desk{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mob{
+    display:none
+  }
+  .desk{
+    display: block
+  }
+}
 /** Trumps
  * Styles for overrides and utilities styles
  */
