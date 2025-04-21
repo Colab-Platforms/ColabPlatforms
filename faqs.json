@@ -962,7 +962,49 @@
           "head": "Policy_For_Determining_Material_Subsidiary",
           "link": "https://cdn.shopify.com/s/files/1/0653/9830/9053/files/Policy_For_Determining_Material_Subsidiary.pdf?v=1742983032"
         }
-       
+        ,
+        {
+          "id": 70,
+          "head": "Colab_Tax_Policy",
+          "link": "https://cdn.shopify.com/s/files/1/0653/9830/9053/files/Colab_-Tax_Policy.pdf?v=1745052162"
+        }
+        ,
+        {
+          "id": 71,
+          "head": "Colab_-Policy_on_Appt_and_Remuneration_of_Directors",
+          "link": "https://cdn.shopify.com/s/files/1/0653/9830/9053/files/Colab_-Policy_on_Appt_and_Remuneration_of_Directors.pdf?v=1745052150"
+        }
+
+        ,
+        {
+          "id": 72,
+          "head": "Colab_Investor_Grievances_Redressal_Policy",
+          "link": "https://cdn.shopify.com/s/files/1/0653/9830/9053/files/Colab_-Investor_Grievances_Redressal_Policy.pdf?v=1745052143"
+        }
+        ,
+        {
+          "id": 73,
+          "head": "COLAB_ESOP_scheme_2024",
+          "link": "https://cdn.shopify.com/s/files/1/0653/9830/9053/files/COLAB_ESOP_scheme_2024.pdf?v=1745052135"
+        }
+        ,
+        {
+          "id": 74,
+          "head": "Colab_-Dividend_Distribution_Policy",
+          "link": "https://cdn.shopify.com/s/files/1/0653/9830/9053/files/Colab_-Dividend_Distribution_Policy.pdf?v=1745052128"
+        }
+        ,
+        {
+          "id": 75,
+          "head": "Colab_-Code_of_Practice-UPSI",
+          "link": "https://cdn.shopify.com/s/files/1/0653/9830/9053/files/Colab_-Code_of_Practice-UPSI.pdf?v=1745052119"
+        }
+        ,
+        {
+          "id": 76,
+          "head": "Colab_-Board_Evaluation_Policy",
+          "link": "https://cdn.shopify.com/s/files/1/0653/9830/9053/files/Colab_-Board_Evaluation_Policy.pdf?v=1745052110"
+        }
         
       ]
     }
@@ -1268,6 +1310,19 @@
           "head": "Postal_ballot_Votig_Results_dated_31.01.2025",
           "link": "https://cdn.shopify.com/s/files/1/0653/9830/9053/files/Postal_ballot_Votig_Results_dated_31.01.2025.pdf?v=1739337835"
         }
+        ,
+        {
+          "id": 59,
+          "head": "Voting_Results-06-08-2024",
+          "link": "https://cdn.shopify.com/s/files/1/0653/9830/9053/files/Voting_Results-06-08-2024.pdf?v=1745218038"
+        }
+        ,
+        {
+          "id": 60,
+          "head": "Voting_Results_of_AGM-27.09.2024",
+          "link": "https://cdn.shopify.com/s/files/1/0653/9830/9053/files/Voting_Results_of_AGM-27.09.2024.pdf?v=1745218031"
+        }
+        
         
       ]
     }
@@ -1318,6 +1373,24 @@
           "id": 8,
           "head": "PR_-_Predictive_Gaming_CPL_02.04.2025",
           "link": "https://cdn.shopify.com/s/files/1/0653/9830/9053/files/PR_-_Predictive_Gaming_CPL_02.04.2025.pdf?v=1743599277"
+        }
+        ,
+        {
+          "id": 9,
+          "head": "Press_Release-13.08.2024",
+          "link": "https://cdn.shopify.com/s/files/1/0653/9830/9053/files/Press_Release-13.08.2024.pdf?v=1745217418"
+        }
+        ,
+        {
+          "id": 10,
+          "head": "Press_Release-07.12.2024",
+          "link": "https://cdn.shopify.com/s/files/1/0653/9830/9053/files/Press_Release-07.12.2024.pdf?v=1745217409"
+        }
+        ,
+        {
+          "id": 11,
+          "head": "Press_Release-03.02.2025",
+          "link": "https://cdn.shopify.com/s/files/1/0653/9830/9053/files/Press_Release-03.02.2025.pdf?v=1745217402"
         }
         
         
@@ -1894,6 +1967,38 @@
     }
 
 
+    ,
+    {
+      "id": 26,
+      "header": "Proceeding Of Agm",
+      "text": [
+       
+        
+        {
+          "id": 1,
+          "head": "Submission_of_Proceedings_of_the_35th_Annual_General_Meeting_of_the_Company",
+          
+          "link": "https://cdn.shopify.com/s/files/1/0653/9830/9053/files/Submission_of_Proceedings_of_the_35th_Annual_General_Meeting_of_the_Company.pdf?v=1745217748"
+        }
+       
+      ]
+    }
+    ,
+    {
+      "id": 27,
+      "header": "Secretarial Compliance Report",
+      "text": [
+       
+        
+        {
+          "id": 1,
+          "head": "Colab_Secretarial_Compliance_Report-2024",
+          
+          "link": "https://cdn.shopify.com/s/files/1/0653/9830/9053/files/Colab_Secretarial_Compliance_Report-2024.pdf?v=1745217833"
+        }
+       
+      ]
+    }
 
   
     
