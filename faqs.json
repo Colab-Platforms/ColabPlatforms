@@ -1335,6 +1335,12 @@
           "head": "Voting_Results_of_AGM-27.09.2024",
           "link": "https://cdn.shopify.com/s/files/1/0653/9830/9053/files/Voting_Results_of_AGM-27.09.2024.pdf?v=1745218031"
         }
+        ,
+        {
+          "id": 61,
+          "head": "Voting_Results_and_Scrutinisers_Report_28.04.2025",
+          "link": "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Voting_Results_and_Scrutinisers_Report_28.04.2025.pdf?v=1745925654"
+        }
         
         
       ]
@@ -1996,7 +2002,7 @@
     ,
     {
       "id": 26,
-      "header": "Proceeding Of Agm",
+      "header": "Proceeding to General Meeting",
       "text": [
        
         
@@ -2005,6 +2011,13 @@
           "head": "Submission_of_Proceedings_of_the_35th_Annual_General_Meeting_of_the_Company",
           
           "link": "https://cdn.shopify.com/s/files/1/0653/9830/9053/files/Submission_of_Proceedings_of_the_35th_Annual_General_Meeting_of_the_Company.pdf?v=1745217748"
+        }
+        ,
+        {
+          "id": 2,
+          "head": "Proceedings_of_EOGM_28.04.2025",
+          
+          "link": "https://cdn.shopify.com/s/files/1/0674/9614/9171/files/Proceedings_of_EOGM_28.04.2025.pdf?v=1745925763"
         }
        
       ]
@@ -2021,6 +2034,23 @@
           "head": "Colab_Secretarial_Compliance_Report-2024",
           
           "link": "https://cdn.shopify.com/s/files/1/0653/9830/9053/files/Colab_Secretarial_Compliance_Report-2024.pdf?v=1745217833"
+        }
+       
+      ]
+    }
+
+    ,
+    {
+      "id": 28,
+      "header": " Integrated Governance",
+      "text": [
+       
+        
+        {
+          "id": 1,
+          "head": "Colab_Secretarial_Compliance_Report-2024",
+          
+          "link": "/Integrated-Governance-31.03.2025.html"
         }
        
       ]
