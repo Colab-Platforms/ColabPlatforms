@@ -27,4 +27,9 @@ const parallaxItems = document.querySelectorAll('[data-speed]');
       window.open("https://docs.google.com/forms/d/e/1FAIpQLScIIZ61SQ0fieck_jrkiiDiWoVCRvLj3hPSqWXCpppzTw7FkQ/viewform?usp=dialo", "_blank");
     });
   });
+
+ window.addEventListener('DOMContentLoaded', () => {
+    document.querySelector('.hero-text').classList.add('visible');
+    document.querySelector('.hero-img').classList.add('visible');
+  });
   
