@@ -137,6 +137,117 @@
     p {
       text-align: center;
     }
+    .hero-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 4rem;
+      padding: 8rem 5%;
+      background-color: #fdf2e9;
+      width:100%;
+      justify-items: center;
+      min-height: 60vh;
+      overflow: hidden;
+    }
+
+    .hero-text {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 1s ease;
+    }
+
+    .hero-text h1 {
+      font-size: 3.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero-text p {
+      font-size: 1.2rem;
+      margin-bottom: 2.5rem;
+      color: #555;
+    }
+
+    .hero-text .btn {
+     
+      background-color: #e67e22;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 30px;
+      font-size: 1rem;
+      transition: background 0.3s;
+    }
+
+    .hero-text .btn:hover {
+      background-color: #cf711f;
+    }
+
+    .hero-img {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 1s ease;
+      text-align: center;
+    }
+
+    .hero-img img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 16px;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .hero-section {
+        grid-template-columns: 1fr;
+        padding: 6rem 5%;
+        text-align: center;
+      }
+
+      .hero-text h1 {
+        font-size: 2.8rem;
+      }
+
+      .hero-text p {
+        font-size: 1.1rem;
+      }
+
+      .hero-text .btn {
+        font-size: 1rem;
+      }
+
+      .hero-img img {
+        width: 80%;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .hero-text h1 {
+        font-size: 2.2rem;
+      }
+
+      .hero-text p {
+        font-size: 1rem;
+      }
+
+      .hero-img img {
+        width: 100%;
+      }
+    }
+
+    .visible {
+      opacity: 1 !important;
+      transform: translateY(0) !important;
+    }
+    @media (min-width: 768px) {
+    h1{
+        letter-spacing: -.1875rem;
+        line-height: 62px !important;
+    }
+}
+
+.btn-f{
+  display: flex;
+  gap:10px;
+}
   </style>
 
   <!-- This site is optimized with the Yoast SEO plugin v24.6 - https://yoast.com/wordpress/plugins/seo/ -->
@@ -444,8 +555,25 @@
               </div>
       </div>
   </div> -->
+  <section class="hero-section">
+    <div class="hero-text">
+      <h1 style="text-align: left;">Colab Platforms – A Public Company Powering India’s Sports-Tech Revolution</h1>
+      <p style="text-align: left;">Listed on BSE | BSE Code: 539528 <br>  Building India's first end-to-end sports innovation ecosystem across tech, data, athlete management, e-commerce, and immersive content.
+      </p>
+      <div class="btn-f">
+      <a href="#report" class="btn">View Investor Relations</a>
+      <a href="https://www.screener.in/company/542866/" class="btn" target="_blank"> View Stock Details</a>
+    </div>
+    </div>
+  
+    <div class="hero-img">
+      <img src="https://cdn.shopify.com/s/files/1/0653/9830/9053/files/a-photograph-of-a-futuristic-sports-stad_2wNIVFRmSSCb2q2FS3PuWg_mq95yDUrS6COdFWwJSR7Qg.jpg?v=1746784021" alt="Healthy food delivery">
+    </div>
+  </section>
 
-      <div class="reports">
+
+
+      <div id="report" class="reports">
         <h2>Select Report Type</h2>
 
         <select id="reportSelect">
