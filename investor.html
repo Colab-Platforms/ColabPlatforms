@@ -555,6 +555,56 @@
               </div>
       </div>
   </div> -->
+
+  <style>.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .box {
+    background: #fff;
+    padding: 20px;
+    flex: 1 1 calc(50% - 20px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+
+  .circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #ddd;
+    flex-shrink: 0;
+  }
+
+  .text-content {
+    flex: 1;
+  }
+
+  .title {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  @media (max-width: 768px) {
+    .box {
+      flex: 1 1 100%;
+    }
+  }
+  .circle img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+  }
+  
+  </style>
   <section class="hero-section">
     <div class="hero-text">
       <h1 style="text-align: left;">Colab Platforms – A Public Company Powering India’s Sports-Tech Revolution</h1>
@@ -572,6 +622,33 @@
   </section>
 
 
+  <div style="margin-top:30px" class="container">
+    <div class="box">
+      <div class="circle">
+        <img  src="https://cdn.shopify.com/s/files/1/0653/9830/9053/files/WhatsApp_Image_2025-05-24_at_1.30.23_PM.jpg?v=1748237778"/>
+      </div>
+      <div class="text-content">
+        <div class="title">Puneet Singh Chadhok</div>
+        <div class="content">Managing Director</div>
+        <div style="padding-top:10px" class="content">Puneet Singh Chadhok is a dynamic entrepreneur with diverse business interests spanning real estate, finance, entertainment, sports, and hospitality. As the founder of Clapstem Entertainment, he has produced award-winning films including Jal, a National Award-winning movie, and over 1000 hours of TV and digital content.
+          A passionate sports visionary, Puneet owns the Punjab De Sher team in Celebrity Cricket League and the Australia Champions franchise in the World Championship of Legends (WCL), featuring global cricket icons. With a proven track record of turning innovative ideas into thriving enterprises, Puneet brings strategic foresight, cross-industry expertise, and a collaborative mindset to drive Colab’s mission of transforming the sports ecosystem through technology.</div>
+      </div>
+    </div>
+    <div class="box">
+      <div class="circle">
+        <img  src="https://cdn.shopify.com/s/files/1/0653/9830/9053/files/WhatsApp_Image_2025-05-14_at_12.03.43_PM.jpg?v=1747205268"/>
+      </div>
+      <div class="text-content">
+        <div class="title">Amardeep S Reen</div>
+        <div class="content">Executive Director</div>
+        <div style="padding-top:10px" class="content">Amardeep S Reen is a seasoned entrepreneur and philanthropist with over two decades of experience across technology, sports, entertainment, and humanitarian work. A technocrat by training, he has held leadership roles in global tech and consulting firms before transitioning into sports management and film production. He has managed elite sports talent and collaborated with legends across cricket, wrestling, and cinema.
+
+          As CEO of Punjab De Sher (CCL) and Australia Champions (WCL), and co-producer of acclaimed films like Torbaaz, Amardeep continues to bridge the worlds of sport and entertainment. Through his philanthropic initiatives during the COVID-19 pandemic and as founder of ASR Foundation, he has demonstrated a deep commitment to social impact and nation-building.</div>
+      </div>
+    </div>
+  </div>
+ 
+   
 
       <div id="report" class="reports">
         <h2>Select Report Type</h2>
@@ -877,7 +954,7 @@
           </tbody>
         </table>
         <p><br> </p>
-      </div>
+   
 
 
   </div>
