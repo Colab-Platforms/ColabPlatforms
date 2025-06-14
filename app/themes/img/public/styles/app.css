@@ -12279,7 +12279,7 @@ body.nav-open, body.modal-open {
 #app {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+ 
 }
 #app .main {
   display: flex;
